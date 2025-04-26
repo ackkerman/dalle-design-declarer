@@ -84,25 +84,10 @@ Result:
 ```
 
 Generated result(by ChatGPT): 
+|Result(`./assets/result.png`)|Original(`./assets/sample.jpg`)|
+|---|---|
+|<img src="./assets/result.png" height=400 >|<img src="./assets/sample.jpg" height=400 >|
 
-<div>
-
-<div style="display: flex; justify-content: space-between; gap: 10px">
-  <div id="left">
-    <span>
-      <strong>Result</strong>
-      (./assets/result.png)
-    </span>
-    <img src="./assets/result.png">
-  </div>
-  <div id="right">
-    <span>
-      <strong>Original</strong>
-      (./assets/sample.jpg)
-    </span>
-    <img src="./assets/sample.jpg">
-  </div>
-</div>
 
 
 ## LICENSE
