@@ -1,6 +1,33 @@
 # `ddd`: Dalle-Design-Declarer
 
-## Usage
+> CLI tool to generate JSON art style profiles from images using OpenAI’s Vision + Chat API
+
+## 🎯 Overview
+
+style-cli is a lightweight CLI application that analyzes a given image and outputs an art style profile in JSON format. It leverages OpenAI’s GPT-4 vision capabilities and returns structured style information:
+
+```json
+{
+  "art_style_profile": {
+    "style_name": "...",
+    "visual_elements": { … },
+    "purpose": "..."
+  }
+}
+```
+
+
+
+**🚀 Features**
+
+- Encodes images as Base64 and sends them as input to GPT-4 Vision (gpt-4o-mini).
+- Parses the model’s response and prints formatted JSON to stdout.
+- Built with Node.js and Vite in CommonJS format for fast startup.
+- Comprehensive test coverage with Vitest.
+
+
+
+## 📖 Usage
 
 ```bash
 $ ddd
@@ -15,26 +42,34 @@ Options:
   -h, --help          display help for command
 ```
 
-## Getting started
+## ⚙️ Getting started
+
+**📦 Requirements**
+
+- Node.js ≥ 16
+- pnpm or npm
+- OpenAI API Key
+
 
 ```bash
-$ pnpm install
-$ pnpm run build
+$ pnpm install # or npm install
+$ pnpm build # or npm run build
 $ npm link
 
-$ touch .env # and add OPENAI_API_KEY=XXXX
+$ export OPENAI_API_KEY="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+# or touch .env and add OPENAI_API_KEY="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
 
-## Example Usage
+**📖 Example**
 
-Run command:
+Run the command:
 
 ```bash
 $ ddd -i ./assets/sample.jpg
 ```
 
-Result: 
+On success, the JSON art style profile will be printed:
 
 ```json
 {
@@ -88,8 +123,16 @@ Generated result(by ChatGPT):
 |---|---|
 |<img src="./assets/result.png" height=400 >|<img src="./assets/sample.jpg" height=400 >|
 
+## ✅ Testing
 
+Vitest is configured to mock the OpenAI API and validate CLI behavior:
 
-## LICENSE
+```
+$ pnpm test
+# or
+$ npm run test
+```
 
-MIT License
+## 📄 License
+
+MIT License © 2025 ackkerman
