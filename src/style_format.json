@@ -1,0 +1,37 @@
+{
+  "art_style_profile": {
+    "style_name": "Flat Minimalist Line Illustration with Pastel Accents",
+    "visual_elements": {
+      "shape_language": "Clean, smooth outlines with simplified forms and minimal details",
+      "colors": {
+        "primary_palette": ["Black", "White"],
+        "accent_colors": ["Pastel Orange", "Pastel Pink", "Vibrant Purple"],
+        "shading": "None; flat fills only"
+      },
+      "lighting": {
+        "type": "Flat, no realistic lighting",
+        "source_direction": "N/A",
+        "shadow_style": "None"
+      },
+      "materials": {
+        "surface_texture": "Flat, uniform color fields",
+        "reflectivity": "None"
+      },
+      "composition": {
+        "object_presentation": "Foreground hand holding a smartphone, centered with clear negative space",
+        "perspective": "Simple side/angled view with slight foreshortening",
+        "background": "Solid white or transparent"
+      },
+      "typography": {
+        "font_style": "None; no text present",
+        "text_placement": "None",
+        "color": "N/A"
+      },
+      "rendering_style": {
+        "technique": "2D vector with consistent line weight",
+        "detail_level": "Low; focus on silhouette and key accents"
+      }
+    },
+    "purpose": "To convey a modern, approachable tech concept using clear iconography and minimalistic design."
+  }
+}

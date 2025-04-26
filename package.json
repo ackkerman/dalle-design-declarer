@@ -1,0 +1,28 @@
+{
+  "name": "dalle-design-declarer",
+  "version": "1.0.0",
+  "description": "画像からアートスタイルプロファイルを生成する CLI ツール",
+  "bin": {
+    "ddd": "dist/main.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "start": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "openai": "^4.96.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vitest": "^3.1.2"
+  }
+}
